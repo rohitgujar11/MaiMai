@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sell_bg" >
+
+                <RelativeLayout
+                    android:id="@+id/rel_brown"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_below="@id/rel_msg"
+                    android:background="@color/brownish_yellow" 
+                     android:descendantFocusability="blocksDescendants" 
+                    >
+
+                    <ImageView
+                        android:id="@+id/sell_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/app_name" />
+
+                    <HorizontalScrollView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/sell_image"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/sell_image"
+                        android:fillViewport="true"
+                        android:measureAllChildren="false"
+                        android:scrollbars="none" >
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/name_text1"
+                             android:focusableInTouchMode="false"
+                            
+                            android:textSize="18sp" />
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/hour_ago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/sell_image"
+                        android:layout_alignBottom="@id/sell_image"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/sell_image"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/list_chats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/rel_brown"
+                    android:layout_marginBottom="60dp"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:transcriptMode="alwaysScroll" >
+                </ListView>
+
+                <TextView
+                    android:id="@+id/no_conv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+                    android:text="No conversation"
+                    android:textColor="#c47413"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/comment_gray_bg" >
+
+                    <CheckBox
+                        android:id="@+id/audio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/audio_check_box"
+                        android:contentDescription="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/audio_btn1"
+                        android:layout_width="38dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/audio_check_box"
+                        android:contentDescription="@string/app_name" />
+
+                    <Button
+                        android:id="@+id/plus_btn"
+                        android:layout_width="38dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/plus_check_box"
+                        android:contentDescription="@string/app_name" />
+
+                    <EditText
+                        android:id="@+id/edit_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/audio_btn1"
+                        android:layout_toRightOf="@id/plus_btn"
+                        android:background="@drawable/commentbg"
+                        android:capitalize="sentences"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:id="@+id/send_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/edit_message"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/app_name"
+                        android:padding="10dp"
+                        android:src="@drawable/send" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/drawer"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/sidemenubg"
+        android:choiceMode="singleChoice" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sell_bg"
+            android:padding="15dp" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <HorizontalScrollView
+                        android:id="@+id/hsv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fillViewport="true"
+                        android:measureAllChildren="false"
+                        android:scrollbars="none" >
+
+                        <RelativeLayout
+                            android:id="@+id/lin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <ImageButton
+                                android:id="@+id/sell_image"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <ImageButton
+                                android:id="@+id/sell_image1"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img1"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image1"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image"
+                                android:padding="5dp" >
+
+                                <ImageButton
+                                    android:id="@+id/sell_video1"
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/video"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <ImageButton
+                                android:id="@+id/sell_image2"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image1"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img2"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image2"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image1"
+                                android:padding="5dp" >
+
+                                <ImageButton
+                                    android:id="@+id/sell_video2"
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/video"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <ImageButton
+                                android:id="@+id/sell_image3"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image2"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img3"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image3"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image2"
+                                android:padding="5dp" >
+
+                                <ImageButton
+                                    android:id="@+id/sell_video3"
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/video"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <ImageButton
+                                android:id="@+id/sell_image4"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image3"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img4"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image4"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image3"
+                                android:padding="5dp" >
+
+                                <ImageButton
+                                    android:id="@+id/sell_video4"
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/video"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <ImageButton
+                                android:id="@+id/sell_image5"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image4"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img5"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image5"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image4"
+                                android:padding="5dp" >
+
+                                <ImageButton
+                                    android:id="@+id/sell_video5"
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/video"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <ImageButton
+                                android:id="@+id/sell_image6"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image5"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img6"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image6"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image5"
+                                android:padding="5dp" >
+
+                                <ImageButton
+                                    android:id="@+id/sell_video6"
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/video"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <ImageButton
+                                android:id="@+id/sell_image7"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image6"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img7"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image7"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image6"
+                                android:padding="5dp" >
+
+                                <ImageButton
+                                    android:id="@+id/sell_video7"
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/video"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <ImageButton
+                                android:id="@+id/sell_image8"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image7"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img8"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image8"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image7"
+                                android:padding="5dp" >
+
+                                <ImageButton
+                                    android:id="@+id/sell_video8"
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/video"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <ImageButton
+                                android:id="@+id/sell_image9"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image8"
+                                android:background="@drawable/addpro_1"
+                                android:contentDescription="@string/app_name"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/cross_img9"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignRight="@id/sell_image9"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/cancel"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/sell_image8"
+                                android:padding="5dp" >
+
+                                <ImageButton
+                                    android:id="@+id/sell_video9"
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/video"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </HorizontalScrollView>
+
+                    <Spinner
+                        android:id="@+id/category_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/hsv"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect" />
+
+                    <ImageView
+                        android:id="@+id/down_arrow_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/category_spinner"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/downarrow"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/item_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/category_spinner"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:hint="@string/item"
+                        android:inputType="textCapSentences"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/desc_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@id/item_edit"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:capitalize="sentences"
+                        android:gravity="left|top"
+                        android:hint="@string/description"
+                        android:imeOptions="actionNext"
+                        android:lines="3"
+                        android:padding="10dp"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/price_edit"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/desc_edit"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:hint="@string/price"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLength="5"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/dollar_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/price_edit"
+                        android:layout_below="@id/desc_edit"
+                        android:layout_marginTop="8dp"
+                        android:padding="10dp"
+                        android:text="$"
+                        android:textSize="15sp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/city_autocomplete"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/desc_edit"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/price_edit"
+                        android:background="@drawable/rounded_rect"
+                        android:hint="@string/city"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/mai_mai_network"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/price_edit"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/mai_mai_network"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_network"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/mai_mai_network"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/price_edit"
+                        android:layout_marginTop="15dp"
+                        android:button="@drawable/network_on_off"
+                        android:checked="true" />
+
+                    <Button
+                        android:id="@+id/done"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/mai_mai_network"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_rect_done"
+                        android:text="@string/done"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+                 
+
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/drawer"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/sidemenubg"
+        android:choiceMode="singleChoice" />
+
+</android.support.v4.widget.DrawerLayout>

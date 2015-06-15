@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/remove_posting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navigation"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="@string/remove_posting"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/navigation"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/keep"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="dismissListener"
+            android:text="@string/keep"
+            android:textColor="@color/dialog_name_text"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/navigation"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/no_buyer_interest"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="dismissListener"
+            android:text="@string/no_buyer_interest"
+            android:textColor="@color/dialog_name_text"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/navigation"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gave"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="dismissListener"
+            android:text="@string/gave"
+            android:textColor="@color/dialog_name_text"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/navigation"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:padding="15dp"
+                android:text="@string/other"
+                android:textColor="@color/dialog_name_text"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/reason"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:lines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/navigation"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/remove"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:onClick="dismissListener"
+                android:text="@string/remove"
+                android:textColor="@color/dialog_name_text"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/navigation"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:onClick="dismissListener"
+                android:text="@string/cancel"
+                android:textColor="@color/dialog_name_text"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

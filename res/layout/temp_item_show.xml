@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="#00000000">
+
+    <com.nanostuffs.maimai.activity.TouchImageView
+        android:id="@+id/sell_image"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+      android:layout_centerInParent="true"
+   
+         />
+
+    <com.nanostuffs.maimai.activity.TouchImageView
+        android:id="@+id/sell_image1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+   android:layout_centerInParent="true"
+      
+       android:background="@drawable/default_image1" />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="invisible" >
+    </ProgressBar>
+
+</RelativeLayout>

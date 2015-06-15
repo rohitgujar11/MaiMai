@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="navigation">#c47413</color>
+    <color name="pressed">#e19d39</color>
+    <color name="pressed1">#93570a</color>
+    <color name="brown">#533209</color>
+    <color name="spinner">#cf7b15</color>
+    <color name="tab_selected">#f3b56a</color>
+    <color name="tab_norml">#66400f</color>
+    <color name="light_gray">#e9e9e9</color>
+    <color name="background">#fab25a</color>
+    <color name="sell_bg">#efeded</color>
+    <color name="spinner_list_item">#e1e1e1</color>
+    <color name="green">#33b19b</color>
+    <color name="orange">#e3881a</color>
+    <color name="light_brown">#ab6108</color>
+    <color name="brownish_yellow">#fac17c</color>
+    <color name="orange_toast_text">#d27e17</color>
+	<color name="orangish_brown">#de8519</color>
+</resources>
